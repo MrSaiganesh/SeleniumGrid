@@ -1,0 +1,1 @@
+java -jar C:\Users\welcome\Documents\Tools\Workspace\SeleniumGrid\Libraries\selenium-server-4.19.1.jar hub
