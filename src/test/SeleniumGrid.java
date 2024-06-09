@@ -2,6 +2,7 @@ package test;
 
 import java.net.URL;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -40,6 +41,9 @@ public class SeleniumGrid {
 		driver.manage().window().maximize();
 	Thread.sleep(10000);
 	System.out.println(driver.getTitle()+":"+browser);
+	driver.findElement(By.xpath("//input[@id='username']")).sendKeys("Saiganesh1a");
+	driver.findElement(By.xpath("//input[@id='password']")).sendKeys("S72US1");
+	driver.findElement(By.xpath("//input[@id='login']")).click();
 //	 Assert.assertEquals("Welcome: Adactin", driver.getTitle());
 	 } 
 	} 
